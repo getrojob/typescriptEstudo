@@ -23,3 +23,49 @@ Aplicar o eslint
 ```bash
 npm i eslint -D
 ```
+Aplicar o plugin eslint e parser
+```bash
+npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+```
+Add .eslintrc.js
+	e o seguinte conteudo
+
+```javascript
+module.exports = {
+    env: {
+        browser: true,
+        es6: true,
+        node: true,
+    },
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+    ],
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
+    },
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 11,
+        sourceType: 'module',
+    },
+    plugins: ['@typescript-eslint'],
+    rules: {},
+};
+
+```
+
+Add o .prettierrc.js
+    e o seguinte conteudo
+
+```javascript
+module.exports = {
+  semi: true,
+  trailingComma: 'all',
+  singleQuote: true,
+  printWidth: 80,
+  tabWidth: 2,
+}
+```
