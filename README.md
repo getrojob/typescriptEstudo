@@ -56,6 +56,10 @@ module.exports = {
 };
 
 ```
+Aplicar o prettier, config e plugin
+```bash
+npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+```
 
 Add o .prettierrc.js
     e o seguinte conteudo

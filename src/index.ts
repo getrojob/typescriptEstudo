@@ -1,3 +1,3 @@
-const nome = 'Getulio Silva'
+const nome = 'Getulio Silva';
 
 console.log('Olá');
